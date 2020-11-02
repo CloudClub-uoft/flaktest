@@ -9,7 +9,7 @@ import time, threading
 from const import *
 
 #connect to mongoDB client
-client = pymongo.MongoClient(string) #insert connection string
+client = pymongo.MongoClient(os.environ['key']) #insert connection string
 db2 = client.get_database('CLOUDCLUSTER')
 p = db2.test_collection
 
