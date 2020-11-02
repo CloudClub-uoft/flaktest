@@ -5,9 +5,6 @@ app = Flask(__name__)
 import pymongo
 import time, threading
 
-#import connection strings
-from const import *
-
 #connect to mongoDB client
 client = pymongo.MongoClient(os.environ['key']) #insert connection string
 db2 = client.get_database('CLOUDCLUSTER')
